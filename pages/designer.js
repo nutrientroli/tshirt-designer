@@ -1,15 +1,16 @@
 import Container from "../components/container";
 import Watermark from "../components/watermark";
 import Title from "../components/title";
-import Preview from "../components/preview";
-import CTADesign from "../components/cta-design";
+import Editor from "../components/editor";
+import GoBack from "../components/go-back";
+import GoToPreview from "../components/go-to-preview";
 
 export default function Home() {
   return (
     <Container>
-      <Title label={"T-shirt designer"} />
-      <Preview />
-      <CTADesign />
+      <Editor />
+      <GoBack />
+      <GoToPreview />
       <Watermark label={"T-shirt designer"} />
     </Container>
   );

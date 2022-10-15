@@ -3,13 +3,13 @@ import Watermark from "../components/watermark";
 import Title from "../components/title";
 import Preview from "../components/preview";
 import CTADesign from "../components/cta-design";
+import GoBack from "../components/go-back"
 
 export default function Home() {
   return (
     <Container>
-      <Title label={"T-shirt designer"} />
       <Preview />
-      <CTADesign />
+      <GoBack path="/designer"/>
       <Watermark label={"T-shirt designer"} />
     </Container>
   );
