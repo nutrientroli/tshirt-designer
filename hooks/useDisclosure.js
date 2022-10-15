@@ -9,7 +9,6 @@ const useDisclosure = (
 
   const open = () => {
     if (!isOpen) {
-      console.log("open");
       setIsOpen(true);
       onOpen();
     }
@@ -17,7 +16,6 @@ const useDisclosure = (
 
   const close = () => {
     if (isOpen) {
-      console.log("close");
       setIsOpen(false);
       onClose();
     }
@@ -27,7 +25,7 @@ const useDisclosure = (
     isOpen ? close() : open();
   };
 
-  return { isOpen, open, close, toggle };
+  return [isOpen, { open, close, toggle } ];
 };
 
 export default useDisclosure;

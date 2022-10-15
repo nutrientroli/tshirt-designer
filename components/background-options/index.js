@@ -2,34 +2,30 @@ import useDisclosure from "../../hooks/useDisclosure";
 
 const OPTIONS = [
   {
-    label: "Change color",
+    label: "random color",
     action: () => {},
   },
   {
-    label: "Change pattern",
-    action: () => {},
-  },
-  {
-    label: "Random tshirt",
+    label: "random image",
     action: () => {},
   },
 ]
 
-const TshirtOptions = () => {
+const BackgroundOptions = () => {
   const [ isOpen, setIsOpen ] = useDisclosure();
   return (
-    <div className="absolute top-28 md:top-1/4 left-0">
+    <div className="absolute top-28 md:top-1/4 right-0">
       {!isOpen ? (
         <button
           onClick={setIsOpen.open}
-          className="py-2 px-4 bg-black text-white rounded-r-xl"
+          className="py-2 px-4 bg-black text-white rounded-l-xl"
         >
-          Open Tshirt options
+          Open background options
         </button>
       ) : (
-        <div className="pt-2 pb-4 px-4 bg-black text-white rounded-r-xl text-right">
+        <div className="pt-2 pb-4 px-4 bg-black text-white rounded-l-xl text-left">
           <button onClick={setIsOpen.close} className="bg-black text-white">
-            Close Tshirt options
+            Close background options
           </button>
           <div>
             {OPTIONS.map((item, index) => {
@@ -51,4 +47,4 @@ const TshirtOptions = () => {
   );
 };
 
-export default TshirtOptions;
+export default BackgroundOptions;

@@ -7,7 +7,7 @@ const GoToPreview = () => {
     router.push("/preview");
   };
   return (
-    <div className="absolute top-4 right-0">
+    <div className="absolute top-14 md:top-8 right-0">
       <button
         onClick={handleClick}
         className="px-4 py-2 bg-black text-white rounded-l-xl"
