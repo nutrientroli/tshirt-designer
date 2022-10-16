@@ -2,16 +2,17 @@ import Container from "../components/container";
 import Watermark from "../components/watermark";
 import Title from "../components/title";
 import Preview from "../components/preview";
-import GoBack from "../components/go-back"
+import { useRouter } from "next/router";
 
-export default function Home() {
+export default function PreviewPage() {
+  const router = useRouter()
+  const {color, pattern} = router.query
   return (
     <div>
       <Container>
-        <Preview />
+        <Preview params={{color, pattern}}/>
       </Container>
       <Title label={"T-shirt designer"} fixed />
-      <GoBack path="/designer" />
       <Watermark label={"T-shirt designer"} />
     </div>
   );
