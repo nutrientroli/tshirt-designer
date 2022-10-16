@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <Container>
       <Title label={"T-shirt designer"} />
-      <Preview />
       <CTADesign />
       <Watermark label={"T-shirt designer"} />
     </Container>

@@ -7,12 +7,12 @@ import GoBack from "../components/go-back"
 export default function Home() {
   return (
     <div>
-      <Title label={"T-shirt designer"} fixed />
-      <GoBack path="/designer" />
-      <Watermark label={"T-shirt designer"} />
       <Container>
         <Preview />
       </Container>
+      <Title label={"T-shirt designer"} fixed />
+      <GoBack path="/designer" />
+      <Watermark label={"T-shirt designer"} />
     </div>
   );
 }

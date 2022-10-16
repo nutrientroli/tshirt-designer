@@ -8,13 +8,13 @@ import GoToPreview from "../components/go-to-preview";
 export default function Home() {
   return (
     <div>
+      <Container>
+        <Editor />
+      </Container>
       <Title label={"T-shirt designer"} fixed />
       <GoBack />
       <GoToPreview />
       <Watermark label={"T-shirt designer"} />
-      <Container>
-        <Editor />
-      </Container>
     </div>
   );
 }
